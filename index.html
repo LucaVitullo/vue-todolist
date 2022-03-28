@@ -26,18 +26,19 @@
           <li v-for="(item,index) in todoList" :class="isDone(index)">
             <i
               @click="deleteList(index)"
-              class="fa-solid fa-circle-xmark me-2 text-center"
+              class="fa-solid fa-circle-xmark mx-2 text-center"
             ></i>
             <div class="todo-item">{{item.text}}</div>
           </li>
         </ul>
         <div class="row justify-content-center">
           <input
+            v-model="addList"
             class="col-2"
             type="text"
             placeholder="Inserisci nella lista"
           />
-          <button class="col-1">Aggiungi</button>
+          <button class="col-1" @click="addNewList">Aggiungi</button>
         </div>
       </div>
     </div>

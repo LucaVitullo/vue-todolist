@@ -25,6 +25,8 @@ const app = new Vue({
             {text : 'Portare fuori il cane',done:false},
             {text : 'Scrivere alla ragazza',done:true},
         ],
+
+        addList:'',
     },
 
     methods: {
@@ -37,6 +39,17 @@ const app = new Vue({
 
         deleteList(index){
             this.todoList.splice(index, 1);
+        },
+
+        addNewList(){
+            const object ={
+                text: this.addList,
+                done:false,
+            }
+            if(this.addList.length > 0){
+                this.todoList.push(object)
+            }
+            this.addList='';
         },
 
     },
