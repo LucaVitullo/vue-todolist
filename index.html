@@ -26,9 +26,11 @@
           <li v-for="(item,index) in todoList" :class="isDone(index)">
             <i
               @click="deleteList(index)"
-              class="fa-solid fa-circle-xmark mx-2 text-center"
+              class="fa-solid fa-circle-xmark mx-2 text-center cursor_pointer"
             ></i>
-            <div class="todo-item">{{item.text}}</div>
+            <div class="todo-item cursor_pointer" @click="invertedValue(index)">
+              {{item.text}}
+            </div>
           </li>
         </ul>
         <div class="row justify-content-center">
