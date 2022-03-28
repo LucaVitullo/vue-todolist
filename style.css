@@ -26,6 +26,7 @@
 
 .todo-item {
   padding-left: 15px;
+  display: contents;
 }
 
 .line-through {

@@ -24,9 +24,21 @@
         <h1>TODO LIST</h1>
         <ul>
           <li v-for="(item,index) in todoList" :class="isDone(index)">
+            <i
+              @click="deleteList(index)"
+              class="fa-solid fa-circle-xmark me-2 text-center"
+            ></i>
             <div class="todo-item">{{item.text}}</div>
           </li>
         </ul>
+        <div class="row justify-content-center">
+          <input
+            class="col-2"
+            type="text"
+            placeholder="Inserisci nella lista"
+          />
+          <button class="col-1">Aggiungi</button>
+        </div>
       </div>
     </div>
   </body>
