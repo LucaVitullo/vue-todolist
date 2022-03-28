@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  background-color: salmon;
+  text-align: center;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.container ul li {
+  padding: 10px 0px;
+  border: 1px dashed sandybrown;
+}
+
+.todo-item {
+  padding-left: 15px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
