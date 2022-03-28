@@ -56,10 +56,10 @@ const app = new Vue({
 
         invertedValue(index){
             if(this.todoList[index].done === false){
-                this.todoList[index].done = true
+                this.todoList[index].done = true;
             }
             else{
-                this.todoList[index].done = false
+                this.todoList[index].done = false;
             }
 
         }

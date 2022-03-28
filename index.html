@@ -37,11 +37,13 @@
           <input
             @keyup.enter="addNewList"
             v-model="addList"
-            class="col-2"
+            class="col-2 rounded"
             type="text"
             placeholder="Inserisci nella lista"
           />
-          <button class="col-1" @click="addNewList">Aggiungi</button>
+          <button class="col-1 rounded mx-1" @click="addNewList">
+            Aggiungi
+          </button>
         </div>
       </div>
     </div>
